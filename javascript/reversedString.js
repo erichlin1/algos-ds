@@ -20,10 +20,8 @@ function reversedStringTwo(string) {
     let stringArr = [];
     let index = 0;
     while (index <= stringLen) {
-        /* 
-        * evaluating property expression for string as [index] in stead [stringLen - index]
-        * ... means reverse() would need to be used.
-        */
+        // evaluating property expression for string as [index] instead of [stringLen - index]..
+        // ..means reverse() needs to used.
         stringArr.push(string[index])
         index++;
     };
