@@ -10,7 +10,7 @@ function reversedStringOne(string) {
     }
     return reversedString;
 }
-module.exports = reversedString;
+module.exports = reversedStringOne;
 /*
 * solution #2
 * converts string into an array, and performs array methods to get the desired output. 
@@ -20,11 +20,11 @@ function reversedStringTwo(string) {
     let stringArr = [];
     let index = 0;
     while (index <= stringLen) {
-        // evaluating property expression for string as [index] instead of [stringLen - index]..
-        // ..means reverse() needs to used.
+        // evaluating property expression for string as [index] instead of [stringLen - index] => arr.reverse()
         stringArr.push(string[index])
         index++;
     };
+    return stringArr;
 }
 
 
