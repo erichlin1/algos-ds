@@ -23,8 +23,6 @@
  *      2.2. increment year counter by 1 for every iteration until initial population is greater than popluation (p).
  * 3. loop finishes execution if and only if p0 >= p. 
  * 4. return year. 
- * 
- * 
  */
 
  /* Solution #1 */
