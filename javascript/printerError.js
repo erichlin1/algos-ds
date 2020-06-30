@@ -51,9 +51,7 @@ function printerError2(string) {
 
 function printerError3(string) {
     const stringArr = string.split('');
-    stringArrLen = stringArr.length;
-    let arrError = stringArr.filter(character => character > 'm');
-    const numOfError = stringArrLen - arrError.length;
-    return `${numOfError}/${stringArrLen}`;
+    let numError = stringArr.filter(character => character > 'm');
+    return `${numError.length}/${stringArr.length}`;
 }
 
