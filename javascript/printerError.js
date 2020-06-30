@@ -51,7 +51,9 @@ function printerError2(string) {
 
 function printerError3(string) {
     const stringArr = string.split('');
+    // Refer to ASCI Chart
     let numError = stringArr.filter(character => character > 'm');
     return `${numError.length}/${stringArr.length}`;
 }
 
+/* solution #4 - Regular Expression */
