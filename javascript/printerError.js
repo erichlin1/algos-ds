@@ -37,14 +37,23 @@ function printerError2(string) {
     const stringArr = string.split('');
     const arrLen = stringArr.length;
     let numErrors = 0;
+    // traverses through stringArr, increment numError by 1 if charater is less than 'm'.
+    // Refer to ASCII Chart.
     stringArr.map(character => {
-        // map method will only traverse through elements that satsify the conditions 
-        // in the callback. In this scenario, all charaters that's less than or equal
-        // to m. character comparison => Integer comparison (Refer to ASCII Chart).
-        character <= 'm'; 
-        numErrors++;
+        if (character <= 'm') {
+            numErrors++;
+        }
     })
     return `${numErrors}/${arrLen}`;
 }
-console.log(printerError2('zzz'));
+
+/* solution #3 */
+
+function printerError3(string) {
+    const stringArr = string.split('');
+    stringArrLen = stringArr.length;
+    let arrError = stringArr.filter(character => character > 'm');
+    const numOfError = stringArrLen - arrError.length;
+    return `${numOfError}/${stringArrLen}`;
+}
 
