@@ -1,6 +1,6 @@
 /*
 /*
- * Objective: Given an array of numbers. return the sum of all positive ones.
+ * Objective: Given an array of numbers. return the sum of all positive integers.
  */
 
  /* solution #1 */
@@ -35,8 +35,7 @@ function positiveSum3(array) {
     (function foo(i) {
         if (i === arrayLen) {
             return;
-        }
-        else {
+        } else {
             if (array[i] > 0) {
                 sum += array[i];
             };
