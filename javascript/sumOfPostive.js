@@ -50,3 +50,13 @@ function positiveSum3(array) {
 function positiveSum4(arr) {
     return arr.reduce((sum, element) => sum + (element > 0 ? element : 0));
 }
+
+function test(arr) {
+    let sum = arr.reduce((accumulator, currentValue) => {
+        if (currentValue > 0) {
+            accumulator + currentValue;
+        };
+    });
+    return sum;
+}
+console.log(test([1,2,3])); // undefined - why? reduce is traverses every element. weird behaviors occur when it doesn't traverse all elements.

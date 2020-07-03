@@ -5,7 +5,8 @@
  * for [1, 2, 2] it should return 9 because 1^2 + 2^2 + 2^2 = 9.
  */
 
-
+ /* solution #1 */
+ 
 function squareSum(numbers) {
     const numbersLen = numbers.length;
     let solution = 0;
@@ -14,4 +15,5 @@ function squareSum(numbers) {
     };
     return solution;
 }
-console.log(squareSum([2,2,2,1,3]));
+
+// NOTE: param1 for reduce method is the callback function, param2 is the initial value

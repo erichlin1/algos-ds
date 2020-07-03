@@ -35,10 +35,10 @@ function seriesSum2(n) {
         arrSum.push(1 / nthDenom);
         nthDenom += 3;
     }
-    let sum  = arrSum.reduce((acc, cur) => acc + cur);
-    return n !== 0 ? `${sum.toFixed(2)}` : `${0.00}`;
+    return n !== 0 ? `${arrSum.reduce((acc, cur) => acc + cur).toFixed(2)}` : `0.00`;
     
 }
 
 
 
+console.log(1 / 0 * 3);
