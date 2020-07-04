@@ -7,11 +7,11 @@
 const palindrome = str => {
     const strArr = str => str.toLowerCase().split('');
     const filteredStrArr = strArr(str).filter(char => {
-        return char.charCodeAt() >= 96 && char.charCodeAt() <= 122;
+        let decChar = char.charCodeAt();
+        return ((decChar >= 96 && decChar <= 122) || (decChar >= 48 && decChar <= 57));
     });
+    console.log(filteredStrArr);
     let copyArr = filteredStrArr.join('');
     let mainArr = filteredStrArr.reverse().join('');
     return copyArr === mainArr ? true : false;
 };
-
-console.log(palindrome('hannah'));
