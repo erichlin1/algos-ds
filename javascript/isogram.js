@@ -26,6 +26,22 @@ function isIsogram(str){
     return ans === undefined ? true : false;
 }
 
+/* solution #2 */ 
+
+function isIsogram2(str) {
+    let arr = new Array();
+    let strArr = str.toLowerCase().split('');
+    for (let i = 0; i <= strArr.length - 1; i++) {
+        if (arr.includes(strArr[i]) === false) {
+            arr.push(strArr[i]);
+        } else {
+            return false;
+        }
+    }
+    return true;
+}
+
+/* solution #3 - Regular Expressions */
 
 
 
