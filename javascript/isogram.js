@@ -41,7 +41,33 @@ function isIsogram2(str) {
     return true;
 }
 
-/* solution #3 - Regular Expressions */
+/* solution #3 */
+
+
+/* Pseudocode:
+ *
+ * SET array of letters
+ * INIT set object
+ *      FOR each letter 
+ *          APPEND each letter to set object
+ * INIT set size variable
+ * IF set size < array of letters THEN
+ *      RETURN false
+ * ELSE
+ *      RETURN true
+ */
+
+function isIsogram3(str) {
+    let strArr = str.toLowerCase().split('');
+    let strObj = new Set(strArr);
+    return strArr.length === strObj.size ? true : false;
+}
+console.log(isIsogram3('ericc'));
+
+
+/* solution #4 - Regular Expressions */
+
+
 
 
 
