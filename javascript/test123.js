@@ -38,11 +38,7 @@ let number2 = function(array) {
 
 /* solution #3 */
 
-let number3 = function(array) {
-    return array.map((letter, index) => `${index + 1}: ${letter}`);
-}
-console.log(number3(["a", "b", "c"]));
-
+let number3 = arr => arr.map((letter, index) => `${index + 1}: ${letter}`);
 
 
 
