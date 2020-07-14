@@ -23,3 +23,5 @@ function twoSum(array, target) {
 
 
 /* solution #2 - use hash tables */
+
+/* solution #3 - use another data structure */
