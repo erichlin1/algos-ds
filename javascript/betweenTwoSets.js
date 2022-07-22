@@ -34,7 +34,7 @@ let getTotalX = function(a, b) {
         };
         countA = 0;
     };
-    return numbersBetweenTheArrays;
+    return numbersBetweenTheArrays.length;
 };
 
 // test cases
