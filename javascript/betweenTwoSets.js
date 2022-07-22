@@ -3,7 +3,7 @@ array a is a factor and the considered integers are all factors of every element
 array b.
 
 input: two integer arrays
-output: integer array
+output: the number of integers that satisfy the conditions
 conditions: problem statement
 
 */
