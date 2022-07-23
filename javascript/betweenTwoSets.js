@@ -8,6 +8,8 @@ conditions: problem statement
 
 */
 
+// Method #1
+
 let getTotalX = function(a, b) {
     let numbersBetweenTheArrays = [];
     let countA = 0;
