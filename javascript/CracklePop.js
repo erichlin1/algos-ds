@@ -33,5 +33,5 @@ let CracklePop = function(start, stop) {
 		};
 };
 
-CracklePop(1, 100)
+CracklePop(1, 100);
 
