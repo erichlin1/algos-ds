@@ -16,10 +16,6 @@ let pairsMaker = function(arr) {
 };
 
 
-console.log(pairsMaker(['a', 'b', 'c', 'd']));
-
-
-
 
 // test cases
 
