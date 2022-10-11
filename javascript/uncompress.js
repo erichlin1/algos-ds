@@ -20,7 +20,7 @@ let uncompress1 = function (str) {
     };
     return uncompressed;
 };
-// Method #2 - O(n)
+// Method #2 - O(n)? 
 
 let isolator = function(word) {
     let ans = '';
@@ -30,13 +30,24 @@ let isolator = function(word) {
     };
     return ans;
 };
-let uncompress2 = function(str) {
+let recursed = function(len) {
+    let ans;
+    // base case
+    if (len == 0) {
+        return ans;
+    } else {
+        for (let i = 0; i < count[i]; i++) {
+
+        };
+        return(len - 1);
+    };
+};
+
+let main = function(str) {
     let uncompressed = '';
     let letters = isolator(str);
     let count = isolator(str.slice(1));
-    for (let i = 0; i < letters.length; i++) {
-        
-    };
+    return recursed(count.length);
 };
 
 
