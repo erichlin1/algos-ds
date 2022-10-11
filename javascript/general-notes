@@ -1,20 +1,16 @@
-// example of looping function for Reduce Method
-// ages of each student
-let ages = [13, 1, 43, 1];
+// Reduce Function
 
+// Case #1: Reduce function invoked on an empty array with and without initial value provided
+// empty array
+let studentAges = Array(5);
 
-// provided function
-let sum = function(previousValue, currentValue) {
-	return previousValue + currentValue;
+// sum function
+const sum = function(accumulator, currentValue) {
+	return accumulator + currentValue;
 };
 
-// for loop
-
-/*
-for (let i = 0; i < ages.length; i++) {
-	sum(ages[i]);
-};
-*/
-let total = ages.reduce(sum, 10);
-console.log(total);
+// 0
+console.log(studentAges.reduce(sum, 0));
+// typeError
+console.log(studentAges.reduce(sum));
 
