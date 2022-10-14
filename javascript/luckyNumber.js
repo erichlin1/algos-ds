@@ -5,48 +5,68 @@ returns all lucky numbers in any order. A lucky number is the minimum element in
 
 */
 
-// not considering non-unique values
-let luckyNumbers = function(matrix) {
-    let luckyNumber;
-    let matrixLen = matrix.length;
-    let indexMinOfVal;
-    let minVal;
-    for (let i = 0 ; i < matrixLen; i++) {
-        // index of smallest value
-        indexMinOfVal = matrix[i].indexOf(Math.min(matrix[i])); 
-        // smallest value of curr row;
-        minVal = Math.min(matrix[i]); 
-        if (i > 0) {
+/* Goal is to acheive 0(n) runtime
 
-        } else {
+Case #1 - when length of the matrix is longer than width
+Case #2 - when width is longer
+Case #3 - both have the same dimensions
+
+*/
 
 
+// assuming that the length of row is the longest;
+let rowLongest = function(array) {
+    let smallestValue;
+    
+
+    return smallestValue;
+};
+
+// assuming that col. length is the longest;
+let colLongest = function(array) {
+    let smallestValue = Number.POSITIVE_INFINITY;
+    let indexOfSmallestValue;
+    let stop = array.length; 
+    let rowLen = array[0].length;
+    let counter = 0;
+    for (let i = 0; i < stop; i++) {
+        let currRow = array[i];
+        let currEle = currRow[counter];
+        console.log(currRow, currEle);
+        if (currEle < smallestValue) {
+            smallestValue = currEle;
+            indexOfSmallestValue = counter;
         };
 
-        
-        
-        if (luckyNumber == undefined) {
-            
-        } else {
-            luck
+        if (counter == rowLen) {
+            continue;
+        };
+        counter ++;
+    };
+    return smallestValue;
+
+};
+
+let main = function(array) {
+    let LargestColValue = colLongest(array).smallestValue;
+    console.log(LargestColValue);
+    let colIndex = colLongest(array).index;
+    for (let j = 0; j < array.length; j++) {
+        let currEle = array[j][colIndex];
+        if (LargestColValue < currEle) {
+            largestColValue = currEle;
         };
     };
 
-
-
-
-    return luckyNumbers;
 };
 
+// test cases:
 
-matrix = [[ 5,  9, 21],
-          [ 9, 19,  6],
-          [12, 14, 15]];
 
-console.log(luckyNumbers(matrix)); // [12]
+let matrix = [[10, 10,  8,  6],
+          [10,  2,  1,  9],
+          [21, 15, 9, 10]]
 
-/*
-1. find minimum value of the current row. 
-2. Check if that value is the maximum value in the col. 
 
-*/
+
+console.log(colLongest(matrix));
